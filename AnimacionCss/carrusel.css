@@ -1,0 +1,130 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #222;
+    
+
+}
+
+
+.container { 
+    perspective: 250px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.tarjeta {
+    width: 50px;
+    height: 80px;
+    background-color: #442222;
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 8s linear infinite;
+
+}
+/* ROTACION DE IMAGENES*/
+@keyframes Carrusel
+{
+    from {
+        transform: rotateY(360deg) translateZ(100px);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    50%{
+        z-index: -10;
+    }
+    to{
+      transform: rotateY(0deg) translateZ(100px);
+      z-index: 10; 
+    }
+}
+
+/* Foto a BUSCAR*/
+
+#foto8{
+    background-image: url(img/golden-freezer.png);
+    background-size: cover;
+}
+#foto8:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+
+
+#foto7{
+    background-image: url(img/pepe.png);
+    background-size: cover;
+    animation-delay: -1s;
+}
+#foto7:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+
+#foto6{
+    background-image: url(img/goku.png);
+    background-size: cover;
+    animation-delay: -2s;
+}
+
+#foto6:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+#foto5{
+    background-image: url(img/golden-freezer.png);
+    background-size: cover;
+    animation-delay: -3s;
+}
+#foto5:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+#foto4{
+    background-image: url(img/cell.png);
+    background-size: cover;
+    animation-delay: -4s;
+}
+
+#foto4:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+
+#foto3{
+    background-image: url(img/mr.png);
+    background-size: cover;
+    animation-delay: -5s;
+}
+
+#foto3:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+#foto2{
+    background-image: url(img/ve.png);
+    background-size: cover;
+    animation-delay: -6s;
+}
+
+#foto2:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+#foto1{
+    background-image: url(img/sheloon.png);
+    background-size: cover;
+    animation-delay: -7s;
+}
+#foto1:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+
+.tarjeta h3 {
+    color: white;
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: #ff0000;
+}

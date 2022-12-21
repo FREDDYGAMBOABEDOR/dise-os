@@ -1,0 +1,17 @@
+.centro{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    animation: lite 2s ease;
+}
+
+@keyframes lite {
+ from {
+    text-shadow: 0 0 20px lightsteelblue;
+    transform: scale(1);
+ }
+ to{
+    text-shadow: 0 0 40px lightblue, 0 0 40px lightblue;
+    transform: scale(1.2);
+}
+}

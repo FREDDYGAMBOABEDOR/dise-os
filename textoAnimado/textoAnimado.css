@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Gemunu Libre', sans-serif;;
+    color: transparent;
+    background-image: url(https://i.pinimg.com/originals/ec/24/46/ec2446182978cb80e3a173c6bdc19f39.gif);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height:90px;
+
+}
